@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat!</title>
+
+    <!-- socket cdn, her bi kullanıcı için bir socket işlemi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js" integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id='chat-wrap'>
+        <h2>Chat App!</h2>
+        <div id='chat-window'>
+            <div id='output'></div>
+            <div id='feedback'></div>
+        </div>
+        <input type="text" id='sender' placeholder="Ad">
+        <input type="text" id='message' placeholder="Mesaj">
+        <button id='submitBtn'>Gonder</button>
+    </div>
+    
+    <script src="chat.js"></script>
+</body>
+</html>
